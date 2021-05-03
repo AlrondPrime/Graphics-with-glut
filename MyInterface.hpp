@@ -5,6 +5,13 @@
 #include <queue>
 #include <math.h>
 
+#include <glm/glm.hpp>
+#include <glm/gtc/matrix_transform.hpp>
+#include <glm/gtc/type_ptr.hpp>
+
+#include <ft2build.h>
+#include FT_FREETYPE_H
+
 #ifdef DEBUG
 #include <typeinfo>
 #include <limits>
@@ -14,8 +21,10 @@ void print(T smth)
 {
 	std::cout << smth << std::endl;
 }
-void print(int count, ...)
+void print(int count = 0, ...)
 {
+	if (count == 0)
+		return;
 	va_list list;
 	va_start(list, count);
 	for (; count > 0; --count)

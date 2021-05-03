@@ -1,7 +1,6 @@
 /glad.c
 /.vs/**.*.*
-/.x64/**.*.*
-/Graphics.sln
-/Graphics.vcxproj
-/Graphics.vcxproj.filters
-/Graphics.vcxproj.user
+/x64/**.*.*
+/Graphics with glut.vcxproj
+/Graphics with glut.vcxproj.filters
+/Graphics with glut.vcxproj.user
